@@ -12,24 +12,31 @@ body {
     font-size: 12px;
 
     display: flex;
-    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
-.sign-up-header {
-    align-self: center;
+form {
+    display: flex;
+    align-items: flex-end;
+    flex-wrap: wrap;
 }
 
-.sign-up-form legend {
+form legend {
     text-align: center;
     font-size: 24px;
 }
 
+.acct-message {
+    text-align: center;
+}
 
 .form-row {
-    padding: 10px;
+    flex-grow: 1;
+    flex-basis: 120px;
 
-    display: flex;
-    justify-content: center;
+    padding: 10px;
     background-color: #F6F7F8;
 }
 
@@ -42,7 +49,9 @@ body {
 }
 
 .form-row input {
-    flex-basis: 180px;
+    width: 200px;
+    border: 2px solid lightgrey;
+    border-radius: 4px;
 }
 
 .form-row input[id="password"] {
