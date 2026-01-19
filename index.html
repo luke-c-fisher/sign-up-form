@@ -12,9 +12,38 @@
             your life to help you realize your deepest dreams. Sign up <em>now</em> to get started.
         </h1> 
     </header>
-    <form>
-
+    <form method="get" class="sign-up-form">
+        <fieldset>
+            <legend>Let's do this</legend>
+            <div class="form-row">
+                <label for="first-name">First Name</label>
+                <input id='first-name' name='first-name' type="text">
+            </div>
+            <div class="form-row">
+                <label for="last-name">Last Name</label>
+                <input id="last-name" name="last-name" type="text">
+            </div>
+            <div class="form-row">
+                <label for="email">Email</label>
+                <input id="email" name="email" type="email" placeholder="joe@example.com">
+            </div>
+            <div class="form-row">
+                <label for="phone">Phone Number</label>
+                <input id="phone" name="phone" type="number" placeholder="(800) 890-4355">
+            </div>
+            <div class="form-row">
+                <label for="password">*Password</label>
+                <input id="password" name="password" type="text">
+            </div>
+            <div class="form-row">
+                <label for="password">*Confirm Password</label>
+                <input id="password" name="password" type="text">
+            </div>
+            <div class="form-row">
+                <button>Create Account</button>
+            </div>
+        </fieldset>
+        <div>Already have an account? <b>sign-in</b></div>
     </form>
-    
 </body>
 </html>
