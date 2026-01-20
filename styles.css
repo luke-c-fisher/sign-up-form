@@ -65,3 +65,20 @@ fieldset {
     border: 1px solid #D55C5F;
 }
 
+.form-row-footnote {
+    margin-top: auto;
+    height: 50px;
+}
+
+button {
+    background-color: #1a1a1a;
+    color: #FFFFFF;
+
+    margin-top: 25px;
+    padding: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 5px;
+    border: none;
+}
+
