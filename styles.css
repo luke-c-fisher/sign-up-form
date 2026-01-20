@@ -12,32 +12,23 @@ body {
     font-size: 12px;
 
     display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
+    flex-direction: column;
 }
 
-form {
-    display: flex;
-    align-items: flex-end;
-    flex-wrap: wrap;
+.info-form {
+    width: 100%;
+    margin-left: auto;
+
+    background-color: #F6F7F8;
 }
 
-form legend {
-    text-align: center;
+.intro-message {
     font-size: 24px;
-}
-
-.acct-message {
-    text-align: center;
+    padding: 5px;
 }
 
 .form-row {
-    flex-grow: 1;
-    flex-basis: 120px;
-
     padding: 10px;
-    background-color: #F6F7F8;
 }
 
 .form-row label {
@@ -49,7 +40,6 @@ form legend {
 }
 
 .form-row input {
-    width: 200px;
     border: 2px solid lightgrey;
     border-radius: 4px;
 }
