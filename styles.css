@@ -21,42 +21,43 @@ body {
     width: 960px;
     margin-left: auto;
     padding: 50px;
-    background-color: inherit;
-    max-height: max-content;
 
+    background-color: inherit;
 }
 
 h1 {
+    text-align: start;
     margin-bottom: auto;
-    height: 130px;
-}
-
-h2 {
-    padding: 12px;
-}
-
-.sign-up-form {
-    background-color:#FFFFFF;
-}
-
-fieldset {
-    border: none;
-}
-
-
-.form-row {
+    height: 120px;
     padding: 10px;
 }
 
+.intro-statement {
+    padding: 15px;
+    font-size: 24px;
+}
+
+.sign-up-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color:#FFFFFF;
+}
+
+.form-row {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+}
+
 .form-row label {
-    /* Brought in from speaker-submission */
-    text-align: right;
-    width: 120px;
-    margin-top: 7px;
-    padding-right: 20px;
+    flex-shrink: 0;
 }
 
 .form-row input {
+    flex: 1;
+
     border: 2px solid lightgrey;
     border-radius: 4px;
 }
@@ -79,6 +80,10 @@ button {
     padding-left: 15px;
     padding-right: 15px;
     border-radius: 5px;
+    border: none;
+}
+
+fieldset {
     border: none;
 }
 
