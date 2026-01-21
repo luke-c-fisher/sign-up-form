@@ -41,7 +41,7 @@ h1 {
 .sign-up-form {
     display: flex;
     flex-direction: column;
-    padding: 8px;
+    padding: 20px;
     background-color:#FFFFFF;
 }
 
@@ -61,10 +61,8 @@ h1 {
 }
 
 .form-row > input {
-   width: 100%;
+   width: 80%;
 }
-
-
 
 .form-row input[id="password"] {
     border: 1px solid #D55C5F;
