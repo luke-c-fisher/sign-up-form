@@ -58,16 +58,26 @@ h1 {
 }
 
 .form-row > label {
-
+=======
+    width: 100%;
+    gap: 10px;
+    justify-content: center;
 }
+
+.form-row .form-row-horz {
+    flex: 1;
+}
+
+.form-row .form-row-horz input {
+    width: 50%;
+}
+
+
 
 .form-row > input {
     width: 100%;
 }
 
-.form-row-2 {
-    
-}
 
 
 .form-row input[id="password"] {
