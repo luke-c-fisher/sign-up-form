@@ -28,9 +28,8 @@ body {
 
 h1 {
     text-align: start;
-    margin-bottom: auto;
     padding-right: 20px; 
-    padding-bottom: 40px;
+    padding-bottom: 20px;
 }
 
 .intro-statement {
@@ -44,6 +43,7 @@ h1 {
     flex-direction: column;
     padding: 20px;
     background-color:#FFFFFF;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .form-row-horz {
@@ -62,18 +62,25 @@ h1 {
     padding: 8px;
 }
 
-.form-row > label {
+.form-row label {
     font-weight: bold;
+    font-size: 12px;
 }
 
 .form-row input {
     padding: 2px;
     width: 80%;
     border-radius: 5px;
+    border: 1px solid lightgray;
 }
 
 .form-row input + span {
   position: relative;
+}
+
+.form-row input:focus {
+    border: 2px solid dodgerblue;
+    box-shadow: 2px 2px 5px lightgray;
 }
 
 .form-row input + span::before {
@@ -111,6 +118,11 @@ button {
     padding-right: 15px;
     border-radius: 5px;
     border: none;
+    cursor: pointer;
+}
+
+button:active {
+    box-shadow: 2px 2px 5px lightgray;
 }
 
 .acct-message {
