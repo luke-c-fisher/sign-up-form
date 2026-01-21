@@ -43,22 +43,36 @@ h1 {
     background-color:#FFFFFF;
 }
 
+.form-row-horz {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
 .form-row {
     display: flex;
     flex-direction: column;
+    width: 100%;
     gap: 10px;
-    /* align-items: center; */
+    justify-content: center;
 }
 
-.form-row > label {
+.form-row .form-row-horz {
+    flex: 1;
+}
+
+.form-row .form-row-horz input {
+    width: 50%;
+}
+
+/* .form-row > label {
     flex: 2;
 
 }
 
 .form-row > input {
     flex: 3;
-
-}
+} */
 
 .form-row input[id="password"] {
     border: 1px solid #D55C5F;
