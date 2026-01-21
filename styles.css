@@ -70,13 +70,13 @@ h1 {
     width: 80%;
 }
 
-.form-row input[id="password"] {
-    border: 1px solid #D55C5F;
+.form-row input:focus {
+    border-color: aqua;
 }
 
-.form-row-footnote {
-    margin-top: auto;
-    height: 50px;
+.form-row input:required {
+    border: 1px solid #D55C5F;
+    border-radius: 2px;
 }
 
 button {
