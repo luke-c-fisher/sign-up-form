@@ -29,13 +29,14 @@ body {
 h1 {
     text-align: start;
     margin-bottom: auto;
-    height: 120px;
-    padding: 10px;
+    padding-right: 20px; 
+    padding-bottom: 40px;
 }
 
 .intro-statement {
     padding-bottom: 10px;
     font-size: 24px;
+    font-weight: bolder;
 }
 
 .sign-up-form {
@@ -68,16 +69,37 @@ h1 {
 .form-row input {
     padding: 2px;
     width: 80%;
+    border-radius: 5px;
 }
 
-.form-row input:focus {
-    border-color: aqua;
+.form-row input + span {
+  position: relative;
 }
 
-.form-row input:required {
-    border: 1px solid #D55C5F;
-    border-radius: 2px;
+.form-row input + span::before {
+  position: absolute;
+  left: -15px;
+  bottom: 5px;
 }
+
+.form-row input:invalid {
+    border: 2px solid red;
+}
+
+.form-row input[id="password"]:valid {
+    border: 2px solid green;
+}
+
+.form-row input:invalid + span::before {
+    content: "✘";
+    color: red;
+}
+
+.form-row input:valid + span::before {
+    content: "✔︎";
+    color: green;
+}
+
 
 button {
     background-color: #1a1a1a;
