@@ -53,40 +53,17 @@ h1 {
 .form-row {
     display: flex;
     flex-direction: column;
-<<<<<<< HEAD
     justify-content: center;
     gap: 10px;
 }
 
 .form-row > label {
-=======
-    width: 100%;
-    gap: 10px;
-    justify-content: center;
-}
-
-.form-row .form-row-horz {
-    flex: 1;
-}
-
-.form-row .form-row-horz input {
-    width: 50%;
-}
-
-/* .form-row > label {
-    flex: 2;
->>>>>>> new-class
 
 }
 
 .form-row > input {
-<<<<<<< HEAD
     width: 100%;
 }
-=======
-    flex: 3;
-} */
->>>>>>> new-class
 
 .form-row-2 {
     
