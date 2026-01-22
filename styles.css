@@ -27,9 +27,12 @@ img {
   height: 100%;
 }
 
-.picture::after {
-  content: "Picture by: Craig Mullins";
-  bottom: 15px;
+img + span::before {
+    position: absolute;
+    font-size: 8px;
+    color: #FFFFFF;
+    content: "Content: The Gates of Argonath by Craig Mullins";
+    bottom: 15px;
 }
 
 .info-form {
