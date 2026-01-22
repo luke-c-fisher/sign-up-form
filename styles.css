@@ -12,12 +12,15 @@ body {
     font-size: 12px;
 
     display: flex;
-    flex-direction: column;
     min-height: 100vh;
 }
 
+.picture {
+    flex-direction: column;
 
-img {
+}
+
+.picture img {
     width: 480px;
     margin-right: auto;
 }
