@@ -4,16 +4,26 @@
   box-sizing: border-box;
 }
 
+@font-face {
+    font-family: "norse";
+    src: 
+    url('fonts/Norse-Norsebold/Norse.woff') format('woff'),
+    url('fonts/Norse-Norsebold/Norsebold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 body {
   color: #1a1a1a;
   background-color: #f6f7f8;
-  font-family: sans-serif;
+  font-family: "norse";
   line-height: 1.3;
-  font-size: 12px;
+  font-size: 15px;
 
   display: flex;
   min-height: 100vh;
 }
+
 
 .picture {
   flex-direction: column;
@@ -33,6 +43,17 @@ img + span::before {
     color: #FFFFFF;
     content: "Content: The Gates of Argonath by Craig Mullins";
     bottom: 15px;
+}
+
+img + span::after {
+    position: absolute;
+    text-align: start;
+    text-shadow: 2px 2px 4px;
+    content: '"Not all those who wander are lost"';
+    font: 2em "norse";
+    color: white;
+    bottom: 400px;
+    left: 50px;
 }
 
 .info-form {
@@ -129,6 +150,7 @@ h1 {
 button {
   background-color: #1a1a1a;
   color: #ffffff;
+  font: inherit;
 
   margin-top: 25px;
   padding: 10px;
