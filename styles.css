@@ -16,10 +16,16 @@ body {
     min-height: 100vh;
 }
 
+
+img {
+    width: 480px;
+    height: 602.55px;
+}
+
 .info-form {
     margin-top: 80px;
-    width: 960px;
     margin-left: auto;
+    width: 960px;
     margin-right: 90px auto;
     padding: 50px;
 
